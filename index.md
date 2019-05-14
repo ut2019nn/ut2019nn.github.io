@@ -22,6 +22,7 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
+!(http://www.wildml.com/wp-content/uploads/2015/09/bidirectional-rnn.png)
 
 [Link](url) and ![Image](http://www.wildml.com/wp-content/uploads/2015/09/bidirectional-rnn.png)
 ```
