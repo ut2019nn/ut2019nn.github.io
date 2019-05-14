@@ -1,6 +1,6 @@
 ## Two Sigma: Using News to Predict Stock Movements
 
-The project was implemented as a part of Neural Networks (LTAT.02.001) course in University of Tartu. The original Kaggle competition can be found here: https://www.kaggle.com/c/two-sigma-financial-news/data.
+The project was implemented as a part of Neural Networks (LTAT.02.001) course in University of Tartu. The original Kaggle competition can be found [here](https://www.kaggle.com/c/two-sigma-financial-news/data).
 
 Collaborators:
 - Erki Aun
