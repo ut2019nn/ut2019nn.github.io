@@ -82,48 +82,27 @@ The news data contains information at both the news article level and asset leve
 
 ### Transformation
 
+Data preprocessing notebook can be found [here](https://colab.research.google.com/drive/10TcWOObFY1SIeUjEnVPw-256NJZhYDGo).
+
+This is a shared notebook that contains all the transformations we have done so far. We have taken apple stock prices and market news data, merged them together and took the most important features we think will benefit the learning process.
+
+Those features are 'close_open_diff', 'urgency', 'relevance','sentimentClass', 'sentimentNegative', 'sentimentNeutral', 'sentimentPositive','noveltyCount3D', 'noveltyCount5D', 'noveltyCount7D', 'volumeCounts3D', 'volumeCounts5D', 'volumeCounts7D', 'returnsOpenPrevMktres1', 'returnsClosePrevRaw1', 'returnsOpenPrevRaw10', 'returnsOpenPrevMktres10' . And the target is taken to be 'returnsOpenNextMktres10' .
+
+We chose open prices rather than close prices because we think that open prices react to news that have aggregated during the last evening more.
+
+The visualization of the data and some interesting plots can also be found on that notebook.
+
 ### Neural Network
+
+The implementation of the neural networks we tried is also done in a shared notebook which can be accessed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr).
+
+We tried different LSTM network with some feed forward part added in front of it, we also tried several combinations of LSTM networks.
+
+Also parameter tunning is done.
 
 ### Results
 
+The preliminary results can be found on the same notebook as the neural network is described. there are some visualizations showing the predicted and actual returns of Apple Inc. The notebook contains sufficient comments to read through. 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/ut2019nn/ut2019nn.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-!()
-
-[Link](url) and ![Stock](url)
-```
-
-For more details see [GitHub Flavored Markdown]("https://guides.github.com/features/mastering-markdown/").
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ut2019nn/ut2019nn.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We also did some accuracy measurment just for simplicity assuming is we have done classification with the network output, then what percentage of the predictions would have the same direction. We got something closer to 60%. We need to try combining two tranches of data with two network and have dense layer in the end. We hope it will give better results.
 
