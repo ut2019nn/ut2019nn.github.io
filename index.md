@@ -14,7 +14,13 @@ In this project, we predict future stock price returns based on two sources of d
 - Market data (2007 to present) provided by Intrinio.
 - News data (2007 to present) provided by Thomson Reuters.
 
-### Market Data
+### Abstract
+
+### Datasets
+
+TODO: add figures for features
+
+#### Market Data
 
 The data includes a subset of US-listed instruments. The set of included instruments changes daily and is determined based on the amount traded and the availability of information.
 
@@ -36,7 +42,7 @@ Within the marketdata, you will find the following columns:
 - `returnsOpenPrevMktres10(float64)` - see returns explanation above
 - `returnsOpenNextMktres10(float64)` - 10 day, market-residualized return. This is the target variable used in competition scoring.
 
-### News Data
+#### News Data
 
 The news data contains information at both the news article level and asset level.
 
@@ -82,6 +88,11 @@ The news data contains information at both the news article level and asset leve
 
 ### Transformation
 
+TODO:
+* what features we used and dropped
+* new features
+* timeseries data conversion
+
 Data preprocessing notebook can be found [here](https://colab.research.google.com/drive/10TcWOObFY1SIeUjEnVPw-256NJZhYDGo).
 
 This is a shared notebook that contains all the transformations we have done so far. We have taken apple stock prices and market news data, merged them together and took the most important features we think will benefit the learning process.
@@ -92,7 +103,12 @@ We chose open prices rather than close prices because we think that open prices 
 
 The visualization of the data and some interesting plots can also be found on that notebook.
 
-### Neural Network
+### The Model
+
+TODO:
+* LSTM figure
+* models we tried
+* the final model
 
 The implementation of the neural networks we tried is also done in a shared notebook which can be accessed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr).
 
@@ -102,7 +118,17 @@ Also parameter tunning is done.
 
 ### Results
 
+TODO:
+* predicted vs actual
+* confusion matrix
+* AUC plot
+* compare to the Kaggle results
+* compare to other ML models
+
 The preliminary results can be found on the same notebook as the neural network is described. there are some visualizations showing the predicted and actual returns of Apple Inc. The notebook contains sufficient comments to read through. 
 
 We also did some accuracy measurment just for simplicity assuming is we have done classification with the network output, then what percentage of the predictions would have the same direction. We got something closer to 60%. We need to try combining two tranches of data with two network and have dense layer in the end. We hope it will give better results.
 
+### Conclusion
+
+Neural networks should not be the first solution for predictive models. They show good results but compared to the other methods, neural networks are hard to interprete.
