@@ -18,7 +18,8 @@ In this project, we predict future stock price returns based on two sources of d
 
 ### Datasets
 
-TODO: add figures for features
+TODO:
+* add figures for features
 
 #### Market Data
 
