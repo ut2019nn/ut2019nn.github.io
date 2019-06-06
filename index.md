@@ -87,7 +87,7 @@ The news data contains information at both the news article level and asset leve
 - `volumeCounts5D(int16)` - same as above, but for 5 days
 - `volumeCounts7D(int16)` - same as above, but for 7 days
 
-![alt text](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwio5vGo39TiAhXuxIsKHe0JCGgQjRx6BAgBEAU&url=https%3A%2F%2Fmedium.com%2Fcoinmonks%2Fthe-artificial-neural-networks-handbook-part-1-f9ceb0e376b4&psig=AOvVaw3W0xinSoUVZ5wfjrxtZmxQ&ust=1559906667086980)
+![alt text](https://cdn-images-1.medium.com/max/1600/1*ZB6H4HuF58VcMOWbdpcRxQ.png)
 
 ### Transformation
 
