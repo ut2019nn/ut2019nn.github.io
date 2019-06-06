@@ -106,6 +106,9 @@ We chose open prices rather than close prices because we think that open prices 
 
 The visualization of the data and some interesting plots can also be found on that notebook.
 
+#### Correlation plot of the selected features
+![image](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
+
 ### The Model
 
 TODO:
