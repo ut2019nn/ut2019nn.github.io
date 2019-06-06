@@ -105,6 +105,8 @@ Those features are 'close_open_diff', 'urgency', 'relevance','sentimentClass', '
 
 We chose open prices rather than close prices because we think that open prices react to news that have aggregated during the last evening more.
 
+![image](https://drive.google.com/uc?export=view&id=1--FjP3doQBKPB5MdWQUNkPcTgZIB8bMX)
+
 The visualization of the data and some interesting plots can also be found on that notebook.
 
 ### The Model
