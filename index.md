@@ -43,8 +43,8 @@ Within the marketdata, you will find the following columns:
 - `returnsOpenPrevMktres10(float64)` - see returns explanation above
 - `returnsOpenNextMktres10(float64)` - 10 day, market-residualized return. This is the target variable used in competition scoring.
 
-#### Times seriers plot for the open price
-![image](https://drive.google.com/uc?export=view&id=1--FjP3doQBKPB5MdWQUNkPcTgZIB8bMX)
+#### Time series plot of the target variable 'returnsOpenNextMktres10' resampled to dayly, weekly and monthly frequency
+![Target variable plot](https://drive.google.com/uc?export=view&id=1Eh4C3lEa9i9q3UfgnUdXOFv3TBVkHC0J)
 
 #### News Data
 
@@ -104,11 +104,12 @@ This is a shared notebook that contains all the transformations we have done so 
 Those features are 'close_open_diff', 'urgency', 'relevance','sentimentClass', 'sentimentNegative', 'sentimentNeutral', 'sentimentPositive','noveltyCount3D', 'noveltyCount5D', 'noveltyCount7D', 'volumeCounts3D', 'volumeCounts5D', 'volumeCounts7D', 'returnsOpenPrevMktres1', 'returnsClosePrevRaw1', 'returnsOpenPrevRaw10', 'returnsOpenPrevMktres10' . And the target is taken to be 'returnsOpenNextMktres10'.
 
 #### Correlation plot of the selected features
-![image](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
+![Correlation plot of the selected features](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
 
 We chose open prices rather than close prices because we think that open prices react to news that have aggregated during the last evening more.
 
-The visualization of the data and some interesting plots can also be found on that notebook.
+#### Times series plot for the open price
+![Times series plot for the open price](https://drive.google.com/uc?export=view&id=1--FjP3doQBKPB5MdWQUNkPcTgZIB8bMX)
 
 ### The Model
 
