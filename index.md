@@ -43,9 +43,7 @@ Within the marketdata, you will find the following columns:
 - `returnsOpenPrevMktres10(float64)` - see returns explanation above
 - `returnsOpenNextMktres10(float64)` - 10 day, market-residualized return. This is the target variable used in competition scoring.
 
-<p align="center">
-<h4>Target variable 'returnsOpenNextMktres10' resampled to dayly, weekly and monthly frequency</h4>
-</p>
+Target variable 'returnsOpenNextMktres10' resampled to dayly, weekly and monthly frequency
 ![Target variable plot](https://drive.google.com/uc?export=view&id=1Eh4C3lEa9i9q3UfgnUdXOFv3TBVkHC0J)
 
 #### News Data
