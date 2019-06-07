@@ -43,7 +43,7 @@ Within the marketdata, you will find the following columns:
 - `returnsOpenPrevMktres10(float64)` - see returns explanation above
 - `returnsOpenNextMktres10(float64)` - 10 day, market-residualized return. This is the target variable used in competition scoring.
 
-#### Time series plot of the target variable 'returnsOpenNextMktres10' resampled to dayly, weekly and monthly frequency
+#### Target variable 'returnsOpenNextMktres10' resampled to dayly, weekly and monthly frequency
 ![Target variable plot](https://drive.google.com/uc?export=view&id=1Eh4C3lEa9i9q3UfgnUdXOFv3TBVkHC0J)
 
 #### News Data
@@ -108,7 +108,7 @@ Those features are 'close_open_diff', 'urgency', 'relevance','sentimentClass', '
 
 We chose open prices rather than close prices because we think that open prices react to news that have aggregated during the last evening more.
 
-#### Times series plot for the open price
+#### The open price for the day
 ![Times series plot for the open price](https://drive.google.com/uc?export=view&id=1--FjP3doQBKPB5MdWQUNkPcTgZIB8bMX)
 
 ### The Model
