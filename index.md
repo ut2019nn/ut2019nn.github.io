@@ -135,6 +135,7 @@ TODO:
 
 
 ![ROC ](https://drive.google.com/file/d/1BYtbdcELF9zay0lBHButelvHO6ZN4ylM/view)
+![ROC-curve](https://drive.google.com/uc?export=view&id=1BYtbdcELF9zay0lBHButelvHO6ZN4ylM)
 
 
 The preliminary results can be found on the same notebook as the neural network is described. there are some visualizations showing the predicted and actual returns of Apple Inc. The notebook contains sufficient comments to read through. 
