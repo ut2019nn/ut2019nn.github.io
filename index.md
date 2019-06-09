@@ -45,7 +45,9 @@ Within the marketdata, you will find the following columns:
 
 #### Target variable 'returnsOpenNextMktres10' resampled to dayly, weekly and monthly frequency
 ![Time series plots for the target variable plots](https://drive.google.com/uc?export=view&id=1Eh4C3lEa9i9q3UfgnUdXOFv3TBVkHC0J)
-![Histogram for the target variable](https://drive.google.com/uc?export=view&id=1-ELVVM0_JDU2YkGOeo1EED5-ANIrjLX6)
+
+#### Histogram for the target variable 'returnsOpenNextMktres10'
+![Histogram for the target variable](https://drive.google.com/uc?export=view&id=1-1-ELVVM0_JDU2YkGOeo1EED5-ANIrjLX6)
 
 #### News Data
 
