@@ -49,6 +49,8 @@ Within the marketdata, you will find the following columns:
 #### Histogram for the target variable 'returnsOpenNextMktres10'
 ![Histogram for the target variable](https://drive.google.com/uc?export=view&id=1-1-ELVVM0_JDU2YkGOeo1EED5-ANIrjLX6)
 
+![](https://drive.google.com/uc?export=view&id=1-ELVVM0_JDU2YkGOeo1EED5-ANIrjLX6)
+
 #### News Data
 
 The news data contains information at both the news article level and asset level.
