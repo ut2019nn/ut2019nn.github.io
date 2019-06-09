@@ -140,6 +140,7 @@ The implementation of this task and the parameters can be found in [this noteboo
 
 Here we have a classification accuracy of 54.4%. This is not bad, if we take into account the fact that we are dealing with stock markets and price predictions. At least it behaves better than random. 
 But let's look at the predicted and actual returns.
+The minimum validation loss is 0.0006
 
 ![Random Forrest. predicted vs actual](https://drive.google.com/uc?export=view&id=1dvCyjiBVVJWUDg2WhbFRgcvDouBlKlFh)
 
@@ -153,12 +154,16 @@ After carefully tunning the parameters, we took 4 dense layers one afer another 
 The notebook can be observed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr#scrollTo=mTZrr4bmlSMk)
 
 Here we got around 56% accuracy in the classification sense. Better than random forrest in that sense.
+The minimum validation loss is 0.0037.
+
 Let's look at the predicted and actual returns.
 
 ![Fully Connected Neural Network. predicted vs actual](https://drive.google.com/uc?export=view&id=1TahbhAv9Bm-l-nkwSzKEgTKTVp0CU0vw)
 
 Now, the network seems to catch some data insight, and the predictions are not as flat as they would be in random forrest case.
 But still, the amplitude of the predictions do not exceed a certain limit, whereas the actual returns are quite volative.
+
+
 
 
 #### LSTM network
@@ -176,6 +181,7 @@ We came to this point by looking at the graph of predictions.
 
 Here we see that the oscilations are more or less from the same distribution and the behaviour of the predicted and actual time series are quite similar. This means that the network got some insight about the data.
 
+The minimum validation loss is 0.00015.
 
 
 
@@ -197,13 +203,15 @@ TODO:
 * compare to the Kaggle results
 * compare to other ML models
 
+As described on the models section, we are choosing the LSTM network because even though it had lower accuracy in the classification sense, it had the lowest validation loss, it was at least 4 times lower than random forrest and even more than the fully connected network.
+
+This means that the size predictions will be better, and even though we get right predictions in 53 cases out of 100, taking into account the size prediction precision, in a long run the network can theoretically be used in an algorithmic trading environment.
+
+
+
+
 ![ROC-curve](https://drive.google.com/uc?export=view&id=1BYtbdcELF9zay0lBHButelvHO6ZN4ylM)
-![ROC ](https://drive.google.com/file/d/1BYtbdcELF9zay0lBHButelvHO6ZN4ylM/view)
 
-
-The preliminary results can be found on the same notebook as the neural network is described. there are some visualizations showing the predicted and actual returns of Apple Inc. The notebook contains sufficient comments to read through. 
-
-We also did some accuracy measurment just for simplicity assuming is we have done classification with the network output, then what percentage of the predictions would have the same direction. We got something closer to 60%. We need to try combining two tranches of data with two network and have dense layer in the end. We hope it will give better results.
 
 ### Conclusion
 
