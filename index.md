@@ -49,7 +49,7 @@ Within the marketdata, you will find the following columns:
 #### Histogram for the target variable 'returnsOpenNextMktres10'
 ![Histogram for the target variable](https://drive.google.com/uc?export=view&id=1-ELVVM0_JDU2YkGOeo1EED5-ANIrjLX6)
 
-#### Target variable 'returnsOpenNextMktres10' with 'returnsOpenPrevMktres10'
+#### Target variable 'returnsOpenNextMktres10' with independent variable 'returnsOpenPrevMktres10'
 ![Target variable 'returnsOpenNextMktres10' with 'returnsOpenPrevMktres10'](https://drive.google.com/uc?export=view&id=1-KbbygAwegofZwzdKQXI1FSr9D8GbNMJ)
 
 #### News Data
