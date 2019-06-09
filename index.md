@@ -96,6 +96,9 @@ The news data contains information at both the news article level and asset leve
 - `volumeCounts5D(int16)` - same as above, but for 5 days
 - `volumeCounts7D(int16)` - same as above, but for 7 days
 
+#### Time series plots for noveltyCount3D, 5D and 7D
+![Time series plots for noveltyCount3D, 5D and 7D](https://drive.google.com/uc?export=view&id=1-Lt2EZraprei4LXROvPo76sQ7T6MBVbq)
+
 ### Transformation
 
 TODO:
