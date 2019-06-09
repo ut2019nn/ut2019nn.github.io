@@ -133,7 +133,7 @@ TODO:
 * compare to the Kaggle results
 * compare to other ML models
 
-
+![ROC-curve](https://drive.google.com/uc?export=view&id=1BYtbdcELF9zay0lBHButelvHO6ZN4ylM)
 ![ROC ](https://drive.google.com/file/d/1BYtbdcELF9zay0lBHButelvHO6ZN4ylM/view)
 
 
