@@ -167,6 +167,8 @@ Based on the nature of time series and the task, we need a network that will cap
 
 Now, we made an LSTM layer in the front of the network and followed with 3 dense layers. Again, we added dropout layers in between all connections and activation in the end with "tanh" function. "MSE" is the loss function and "Adam" is the optimizer.
 
+The network's implementation can be found in [this notebook](https://colab.research.google.com/drive/1WqVP-4bfY7v0rrE1Ag8d7zMSstIYY5eN#scrollTo=XkpaDOwykXlo)
+
 The accuracy of the classification part is around 53%. This is not the best result, but in out opinion this network is capable of predicting the size and direction together better than the others.
 We came to this point by looking at the graph of predictions.
 
