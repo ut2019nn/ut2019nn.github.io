@@ -106,20 +106,18 @@ This is a shared notebook that contains all the transformations we have done so 
 
 Those features are 'urgency', 'relevance','sentimentClass', 'sentimentNegative', 'sentimentNeutral', 'sentimentPositive','noveltyCount3D', 'noveltyCount5D', 'noveltyCount7D', 'volumeCounts3D', 'volumeCounts5D', 'volumeCounts7D', 'returnsOpenPrevMktres1', 'returnsClosePrevRaw1', 'returnsOpenPrevRaw10', 'returnsOpenPrevMktres10' . And the target is taken to be 'returnsOpenNextMktres10'.
 
-We also created a new feature **'close_open_diff'**, which is the ratio of close price to open price (close_open_diff = close/open). 
-
-#### Bootstrap plot on mean, median and mid-range statistics of close_open_diff feature (samples - 1000, size - 50)
-![Boostrap plot of close_open_diff feature](https://drive.google.com/uc?export=view&id=1EXOd5DlXTiKblEgu6T6HjzUp146Kk6Pg)
-
-![Correlation plot of the selected features](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
-
-#### Correlation plot of the selected features
-![Correlation plot of the selected features](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
-
 We chose open prices rather than close prices because we think that open prices react to news that have aggregated during the last evening more.
 
 #### The open price for the day
 ![Times series plot for the open price](https://drive.google.com/uc?export=view&id=1--FjP3doQBKPB5MdWQUNkPcTgZIB8bMX)
+
+We also created a new feature **'close_open_diff'**, which is the ratio of close price to open price (close_open_diff = close/open). 
+
+#### Bootstrap plot on mean, median and mid-range statistics of the close_open_diff feature (samples - 1000, size - 50)
+![Boostrap plot of close_open_diff feature](https://drive.google.com/uc?export=view&id=1EXOd5DlXTiKblEgu6T6HjzUp146Kk6Pg)
+
+#### Correlation plot of the selected features
+![Correlation plot of the selected features](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
 
 ### The Model
 
