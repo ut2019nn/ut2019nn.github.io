@@ -133,6 +133,10 @@ TODO:
 * compare to the Kaggle results
 * compare to other ML models
 
+
+![ROC ](https://drive.google.com/file/d/1BYtbdcELF9zay0lBHButelvHO6ZN4ylM/view)
+
+
 The preliminary results can be found on the same notebook as the neural network is described. there are some visualizations showing the predicted and actual returns of Apple Inc. The notebook contains sufficient comments to read through. 
 
 We also did some accuracy measurment just for simplicity assuming is we have done classification with the network output, then what percentage of the predictions would have the same direction. We got something closer to 60%. We need to try combining two tranches of data with two network and have dense layer in the end. We hope it will give better results.
