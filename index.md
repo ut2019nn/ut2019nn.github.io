@@ -99,8 +99,11 @@ The news data contains information at both the news article level and asset leve
 #### Time series plots for noveltyCount3D, 5D and 7D
 ![Time series plots for noveltyCount3D, 5D and 7D](https://drive.google.com/uc?export=view&id=1-Lt2EZraprei4LXROvPo76sQ7T6MBVbq)
 
+#### Kernel density estimate plot for noveltyCount3D, 5D and 7D
+![Kde plot for noveltyCount3D, 5D and 7D](https://drive.google.com/uc?export=view&id=1-m43R4Q5spjPxWejrUiMWDNYSgn2z-EX)
+
 #### Scatter plot for sentimentPositive, sentimentNegative and sentimentClass
-![Time series plots for noveltyCount3D, 5D and 7D](https://drive.google.com/uc?export=view&id=1-XJOO6RZkZ-wRX8D8H8Td4Tu__ryaaYO)
+![Scatter plot for sentimentPositive, Negative and Class](https://drive.google.com/uc?export=view&id=1-XJOO6RZkZ-wRX8D8H8Td4Tu__ryaaYO)
 
 ### Transformation
 
