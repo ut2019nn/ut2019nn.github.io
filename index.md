@@ -134,6 +134,9 @@ We also created a new feature **'close_open_diff'**, which is the ratio of close
 #### Correlation plot of the selected features
 ![Correlation plot of the selected features](https://drive.google.com/uc?export=view&id=1gI8aRls5pI23yi4Mo-zutGqtS_5Ypyfc)
 
+#### Time series plots for all the selected features
+![Ts plots for the selected features](https://drive.google.com/uc?export=view&id=1-s9pGIQ-tPleU5-yJyzlnIDyVjaoD74d)
+
 ### The Model
 
 TODO:
