@@ -129,6 +129,57 @@ TODO:
 * models we tried
 * the final model
 
+Even though our task is regression and we should predict to which direction the stock price will go and by how much, in the evaluation of the models we use the accuracy measure for classification and confusion matrix. This cannot encompass the complete measurment of the model, but will give us some result. Additionally, we will do some particlar analysis to find the best model.
+
+#### Random Forrest Regressor
+
+One good model to start with would be the random forrest regressor. This has proven to give quite good results in almost any task and is not hard to implement and check.
+
+Here estimated 2 depth model where we the data points separately and train the model on each data point. Loss function is taken to be "MSE".
+The implementation of this task and the parameters can be found in [this notebook](https://colab.research.google.com/drive/1fOZa_7uhhSEGQo9AQHkYwdZk7OAaBMGX#scrollTo=Se4ZC7rmAyXN)
+
+Here we have a classification accuracy of 54.4%. This is not bad, if we take into account the fact that we are dealing with stock markets and price predictions. At least it behaves better than random. 
+But let's look at the predicted and actual returns.
+
+![Random Forrest. predicted vs actual](https://drive.google.com/uc?export=view&id=1dvCyjiBVVJWUDg2WhbFRgcvDouBlKlFh)
+
+Here we see that the model tries to minimize MSE just simply flattening the predictions. In a complete random environment this would be the optimal choice, here we see that the model did not get much of an insight of the data, thus predicts some average values, even though the accuracy is more than average, but it does not estimate the size of the stock price movement properly.
+
+
+#### Fully Connected Neural Network
+
+Another stage of model estimation is already in the Deep learning environment. We decided to start with Fully connected net.
+After carefully tunning the parameters, we took 4 dense layers one afer another and added dropout layers in between. In the end the activation layer with "tanh" as activation function, the loss is "MSE" and the optimizer is "Adam".
+The notebook can be observed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr#scrollTo=mTZrr4bmlSMk)
+
+Here we got around 56% accuracy in the classification sense. Better than random forrest in that sense.
+Let's look at the predicted and actual returns.
+
+![Fully Connected Neural Network. predicted vs actual](https://drive.google.com/uc?export=view&id=1TahbhAv9Bm-l-nkwSzKEgTKTVp0CU0vw)
+
+Now, the network seems to catch some data insight, and the predictions are not as flat as they would be in random forrest case.
+But still, the amplitude of the predictions do not exceed a certain limit, whereas the actual returns are quite volative.
+
+
+#### LSTM network
+
+Based on the nature of time series and the task, we need a network that will capture not only a current input features, but also previous values. This is based on the fact, that in finance stock prices react to not only yesterday's news, but also the news of previous days can have some overlasting impact. Moreover, the price of yesterday can affect on the price of today, even in some cases the prices can play a big role for a longer period of time. There are even several theories of financial time series that try to explain this(e.g. mean reverting time series, persistent, non-persistent series). 
+
+Now, we made an LSTM layer in the front of the network and followed with 3 dense layers. Again, we added dropout layers in between all connections and activation in the end with "tanh" function. "MSE" is the loss function and "Adam" is the optimizer.
+
+The accuracy of the classification part is around 53%. This is not the best result, but in out opinion this network is capable of predicting the size and direction together better than the others.
+We came to this point by looking at the graph of predictions.
+
+![LSTM Neural Network. predicted vs actual](https://drive.google.com/uc?export=view&id=1NFUr2C8dPwxqF_4hwkbsjnIDP06ZY9ca)
+
+Here we see that the oscilations are more or less from the same distribution and the behaviour of the predicted and actual time series are quite similar. This means that the network got some insight about the data.
+
+
+
+
+
+
+
 The implementation of the neural networks we tried is also done in a shared notebook which can be accessed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr).
 
 We tried different LSTM network with some feed forward part added in front of it, we also tried several combinations of LSTM networks.
