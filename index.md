@@ -5,7 +5,7 @@ The project was implemented as a part of Neural Networks (LTAT.02.001) course in
 Collaborators:
 - Erki  Aun: Search for the discorances in the code and blog post. Blog illustration.
 - Hindrek Teder
-- Karen Danielyan
+- Karen Danielyan: Random Forrest, contribution in accuracy measurement and overall logistics. Part of bog.
 - Rudayasekaran PS: Reccurrent, Feed Forward Networks and Data Preprocessing.
 
 ### Goal
