@@ -219,8 +219,6 @@ Also parameter tunning is done.
 TODO:
 * predicted vs actual
 * confusion matrix
-* AUC plot
-* compare to the Kaggle results
 * compare to other ML models
 
 As described on the models section, we are choosing the LSTM network because even though it had lower accuracy in the classification sense, it had the lowest validation loss, it was at least 4 times lower than random forrest and even more than the fully connected network.
@@ -232,6 +230,11 @@ This means that the size predictions will be better, and even though we get righ
 
 ![ROC-curve](https://drive.google.com/uc?export=view&id=1BYtbdcELF9zay0lBHButelvHO6ZN4ylM)
 
+#### Kaggle Leaderboard
+
+![Kaggle Leaderboard](https://drive.google.com/uc?export=view&id=1BIIkIffVFrDAdJu3iF_GqqgJBu8k-Ce3)
+
+Mean score: 0.40454 (2019-06-10 14:51)
 
 ### Conclusion
 
