@@ -3,7 +3,7 @@
 The project was implemented as a part of Neural Networks (LTAT.02.001) course in University of Tartu. The original Kaggle competition can be found [here](https://www.kaggle.com/c/two-sigma-financial-news/data).
 
 Collaborators:
-- Erki  Aun
+- Erki  Aun: Search for the discorances in the code and blog post. Blog illustration.
 - Hindrek Teder
 - Karen Danielyan
 - Rudayasekaran PS: Reccurrent, Feed Forward Networks and Data Preprocessing.
