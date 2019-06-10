@@ -237,4 +237,7 @@ Mean score: 0.40454 (2019-06-10 14:51)
 
 ### Conclusion
 
-Neural networks should not be the first solution for predictive models. They show good results but compared to the other methods, neural networks are hard to interprete.
+Neural networks should not be the first solution for predictive models. They show good results but compared to the other methods, neural networks are hard to interprete. Further, deciding a neural network type also plays a pivotal role when designing a network. In our scenario RNN performed way better than FFN. Despite RNNs have shown great promise in many NLP tasks it can also be used on time series data as predictions are depends on predictions in the previous time stamp.
+
+Ultimately, we have chosen Keras over PyTorch for heaps of reasonings but more chiefly we speculate that Keras is way matured compared to PyTorch in various number of approaches.
+
