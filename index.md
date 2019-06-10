@@ -14,9 +14,6 @@ In this project, we predict future stock price returns based on two sources of d
 - Market data (2007 to present) provided by Intrinio.
 - News data (2007 to present) provided by Thomson Reuters.
 
-### Abstract
-
-### Datasets
 
 #### Market Data
 
@@ -147,9 +144,6 @@ We also created a new feature **'close_open_diff'**, which is the ratio of close
 ### The Model
 
 
-* LSTM figure
-* models we tried
-* the final model
 
 Even though our task is regression and we should predict to which direction the stock price will go and by how much, in the evaluation of the models we use the accuracy measure for classification and confusion matrix. This cannot encompass the complete measurment of the model, but will give us some result. Additionally, we will do some particlar analysis to find the best model.
 
@@ -203,7 +197,7 @@ We came to this point by looking at the graph of predictions.
 
 Here we see that the oscilations are more or less from the same distribution and the behaviour of the predicted and actual time series are quite similar. This means that the network got some insight about the data.
 
-The minimum validation loss is 0.00015.
+The minimum validation loss is 0.00009. 
 
 The implementation of the neural networks we tried is also done in a shared notebook which can be accessed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr).
 
@@ -213,9 +207,6 @@ Also parameter tunning is done.
 
 ### Results
 
-
-* predicted vs actual
-* compare to other ML models
 
 As described on the models section, we are choosing the LSTM network because it had  the highest balanced accuracy in the the classification sense (even though it had lowest unbalanced accuracy) and the lowest validation loss. The validation loss was at least 4 times lower than random forrest and even more than the fully connected network.
 
