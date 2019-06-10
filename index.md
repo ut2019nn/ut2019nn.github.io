@@ -158,7 +158,7 @@ One good model to start with would be the random forrest regressor. This has pro
 Here estimated 2 depth model where we the data points separately and train the model on each data point. Loss function is taken to be "MSE".
 The implementation of this task and the parameters can be found in [this notebook](https://colab.research.google.com/drive/1fOZa_7uhhSEGQo9AQHkYwdZk7OAaBMGX#scrollTo=Se4ZC7rmAyXN)
 
-Here we have a classification accuracy of 54.4%. This is not bad, if we take into account the fact that we are dealing with stock markets and price predictions. At least it behaves better than random. 
+Here we have a classification accuracy of 54.4% (balanced accuracy 49%). This is not bad, if we take into account the fact that we are dealing with stock markets and price predictions. At least it behaves better than random. 
 But let's look at the predicted and actual returns.
 The minimum validation loss is 0.0006
 
@@ -173,7 +173,7 @@ Another stage of model estimation is already in the Deep learning environment. W
 After carefully tunning the parameters, we took 4 dense layers one afer another and added dropout layers in between. In the end the activation layer with "tanh" as activation function, the loss is "MSE" and the optimizer is "Adam".
 The notebook can be observed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr#scrollTo=mTZrr4bmlSMk)
 
-Here we got around 56% accuracy in the classification sense. Better than random forrest in that sense.
+Here we got around 56% accuracy (balanced accuracy 50%) in the classification sense. Better than random forrest in that sense.
 The minimum validation loss is 0.0037.
 
 Let's look at the predicted and actual returns.
@@ -194,7 +194,7 @@ Now, we made an LSTM layer in the front of the network and followed with 3 dense
 
 The network's implementation can be found in [this notebook](https://colab.research.google.com/drive/1WqVP-4bfY7v0rrE1Ag8d7zMSstIYY5eN#scrollTo=XkpaDOwykXlo)
 
-The accuracy of the classification part is around 53%. This is not the best result, but in out opinion this network is capable of predicting the size and direction together better than the others.
+The accuracy of the classification part is around 53% (balanced accuracy 52%). This is not the best result, but in out opinion this network is capable of predicting the size and direction together better than the others.
 We came to this point by looking at the graph of predictions.
 
 ![LSTM Neural Network. predicted vs actual](https://drive.google.com/uc?export=view&id=1NFUr2C8dPwxqF_4hwkbsjnIDP06ZY9ca)
@@ -202,11 +202,6 @@ We came to this point by looking at the graph of predictions.
 Here we see that the oscilations are more or less from the same distribution and the behaviour of the predicted and actual time series are quite similar. This means that the network got some insight about the data.
 
 The minimum validation loss is 0.00015.
-
-
-
-
-
 
 The implementation of the neural networks we tried is also done in a shared notebook which can be accessed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr).
 
@@ -220,7 +215,7 @@ Also parameter tunning is done.
 * predicted vs actual
 * compare to other ML models
 
-As described on the models section, we are choosing the LSTM network because even though it had lower accuracy in the classification sense, it had the lowest validation loss, it was at least 4 times lower than random forrest and even more than the fully connected network.
+As described on the models section, we are choosing the LSTM network because it had  the highest balanced accuracy in the the classification sense (even though it had lowest unbalanced accuracy) and the lowest validation loss. The validation loss was at least 4 times lower than random forrest and even more than the fully connected network.
 
 This means that the size predictions will be better, and even though we get right predictions in 53 cases out of 100, taking into account the size prediction precision, in a long run the network can theoretically be used in an algorithmic trading environment.
 
