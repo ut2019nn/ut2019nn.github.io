@@ -144,7 +144,7 @@ We also created a new feature **'close_open_diff'**, which is the ratio of close
 
 ### The Model
 
-TODO:
+
 * LSTM figure
 * models we tried
 * the final model
@@ -216,7 +216,7 @@ Also parameter tunning is done.
 
 ### Results
 
-TODO:
+
 * predicted vs actual
 * compare to other ML models
 
@@ -241,3 +241,10 @@ Neural networks should not be the first solution for predictive models. They sho
 
 Ultimately, we have chosen Keras over PyTorch for heaps of reasonings but more chiefly we speculate that Keras is way matured compared to PyTorch in various number of approaches.
 
+
+### Contributions
+
+- Erki Aun - 
+- Hindrek Teder - 
+- Karen Danielyan - 
+- Rudayasekaran PS - 
