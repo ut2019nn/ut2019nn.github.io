@@ -172,7 +172,7 @@ Here we see that the model tries to minimize MSE just simply flattening the pred
 #### Fully Connected Neural Network
 
 Another stage of model estimation is already in the Deep learning environment. We decided to start with Fully connected net.
-After carefully tunning the parameters, we took 4 dense layers one afer another and added dropout layers in between. In the end the activation layer with "tanh" as activation function, the loss is "MSE" and the optimizer is "Adam".
+After carefully tunning the parameters, we took 4 dense layers one afer another and added dropout layers in between. In the end the activation layer with "tanh" as activation function, the loss is "logcosh" and the optimizer is "Adam".
 The notebook can be observed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr#scrollTo=mTZrr4bmlSMk)
 
 Here we got around 56% accuracy (balanced accuracy 50%) in the classification sense. Better than random forrest in that sense.
@@ -192,7 +192,7 @@ But still, the amplitude of the predictions do not exceed a certain limit, where
 
 Based on the nature of time series and the task, we need a network that will capture not only a current input features, but also previous values. This is based on the fact, that in finance stock prices react to not only yesterday's news, but also the news of previous days can have some overlasting impact. Moreover, the price of yesterday can affect on the price of today, even in some cases the prices can play a big role for a longer period of time. There are even several theories of financial time series that try to explain this(e.g. mean reverting time series, persistent, non-persistent series). 
 
-Now, we made an LSTM layer in the front of the network and followed with 3 dense layers. Again, we added dropout layers in between all connections and activation in the end with "tanh" function. "MSE" is the loss function and "Adam" is the optimizer.
+Now, we made an LSTM layer in the front of the network and followed with 3 dense layers. Again, we added dropout layers in between all connections and activation in the end with "tanh" function. "logcosh" is the loss function and "Adam" is the optimizer.
 
 The network's implementation can be found in [this notebook](https://colab.research.google.com/drive/1WqVP-4bfY7v0rrE1Ag8d7zMSstIYY5eN#scrollTo=XkpaDOwykXlo)
 
