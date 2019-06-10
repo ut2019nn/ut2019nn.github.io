@@ -126,6 +126,8 @@ This is a shared notebook that contains all the transformations we have done so 
 
 Those features are 'urgency', 'relevance','sentimentClass', 'sentimentNegative', 'sentimentNeutral', 'sentimentPositive','noveltyCount3D', 'noveltyCount5D', 'noveltyCount7D', 'volumeCounts3D', 'volumeCounts5D', 'volumeCounts7D', 'returnsOpenPrevMktres1', 'returnsClosePrevRaw1', 'returnsOpenPrevRaw10', 'returnsOpenPrevMktres10' . And the target is taken to be 'returnsOpenNextMktres10'.
 
+We standardized all the selected features by removing the mean and scaling to unit variance.
+
 We chose open prices rather than close prices because we think that open prices react to news that have aggregated during the last evening more.
 
 #### The open price for the day
