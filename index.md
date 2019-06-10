@@ -116,6 +116,10 @@ close_open_diff - Simply the difference between open and close values.
 * Timeseries data conversion:
 Keras Timeseriesgenerator was being used to generate some sequence of data, in a span of continues 10 days and produce batches for training/validation.
 
+![RNN input](https://cdn-images-1.medium.com/max/1600/1*v5_QpzkQfufVogeCY9eaOw.png)
+
+https://cdn-images-1.medium.com/max/1600/1*v5_QpzkQfufVogeCY9eaOw.png
+
 Data preprocessing notebook can be found [here](https://colab.research.google.com/drive/10TcWOObFY1SIeUjEnVPw-256NJZhYDGo).
 
 This is a shared notebook that contains all the transformations we have done so far. We have taken apple stock prices and market news data, merged them together and took the most important features we think will benefit the learning process.
