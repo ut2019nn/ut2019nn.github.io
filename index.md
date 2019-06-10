@@ -18,9 +18,6 @@ In this project, we predict future stock price returns based on two sources of d
 
 ### Datasets
 
-TODO:
-* add figures for features
-
 #### Market Data
 
 The data includes a subset of US-listed instruments. The set of included instruments changes daily and is determined based on the amount traded and the availability of information.
