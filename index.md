@@ -114,9 +114,9 @@ The news data contains information at both the news article level and asset leve
 urgency, relevance, sentimentClass, sentimentNegative, sentimentNeutral, sentimentPositive, noveltyCount3D, noveltyCount5D, noveltyCount7D, volumeCounts3D, volumeCounts5D, volumeCounts7D, returnsOpenPrevMktres1, returnsClosePrevRaw1, returnsOpenPrevRaw10, returnsOpenPrevMktres10
 
 * New features added:
-close_open_diff - Simply the difference between open and close values
+close_open_diff - Simply the difference between open and close values.
 
-* Timeseries data conversion
+* Timeseries data conversion:
 Keras Timeseriesgenerator was being used to generate some sequence of data, in a span of continues 10 days and produce batches for training/validation.
 
 Data preprocessing notebook can be found [here](https://colab.research.google.com/drive/10TcWOObFY1SIeUjEnVPw-256NJZhYDGo).
