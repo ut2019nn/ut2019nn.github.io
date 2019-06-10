@@ -226,7 +226,7 @@ As described on the models section, we are choosing the LSTM network because eve
 This means that the size predictions will be better, and even though we get right predictions in 53 cases out of 100, taking into account the size prediction precision, in a long run the network can theoretically be used in an algorithmic trading environment.
 
 
-![CM](https://drive.google.com/drive/folders/1XB6wpbdj18SDBlgx31fkveb_1hZbHgjM)
+![CM](https://https://drive.google.com/file/d/1Ch8ndaROtddE3qvozycQGDvvz47ULua5/view?usp=sharing)
 
 ![ROC-curve](https://drive.google.com/uc?export=view&id=1BYtbdcELF9zay0lBHButelvHO6ZN4ylM)
 
