@@ -6,7 +6,7 @@ Collaborators:
 - Erki  Aun
 - Hindrek Teder
 - Karen Danielyan
-- Rudesh Sekaran
+- Rudayasekaran PS
 
 ### Goal
 
