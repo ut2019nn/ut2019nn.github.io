@@ -141,7 +141,7 @@ We also created a new feature **'close_open_diff'**, which is the ratio of close
 #### Time series plots for all the selected features
 ![Ts plots for the selected features](https://drive.google.com/uc?export=view&id=1-s9pGIQ-tPleU5-yJyzlnIDyVjaoD74d)
 
-### The Model
+### The Models
 
 
 
@@ -225,8 +225,8 @@ Mean score: 0.40454 (2019-06-10 14:51)
 
 ### Conclusion
 
-Neural networks should not be the first solution for predictive models. They show good results but compared to the other methods, neural networks are hard to interprete. Further, deciding a neural network type also plays a pivotal role when designing a network. In our scenario RNN performed way better than FFN. Despite RNNs have shown great promise in many NLP tasks it can also be used on time series data as predictions are depends on predictions in the previous time stamp.
+Neural networks should not be the first solution for predictive models. They show good results but compared to the other methods, neural networks are hard to interprete. Further, deciding a neural network type also plays a pivotal role when designing a network. In our scenario RNN performed way better than Fully connected network. Despite RNNs have shown great promise in many NLP tasks it can also be used on time series data as predictions are depends on predictions in the previous time stamp.
 
-Ultimately, we have chosen Keras over PyTorch for heaps of reasonings but more chiefly we speculate that Keras is way matured compared to PyTorch in various number of approaches.
+Ultimately, we have chosen Keras over PyTorch for heaps of reasonings but more chiefly we speculate that Keras is way more mature compared to PyTorch in various number of approaches.
 
 NOTE: Since the Kaggle competition has ended, we could not use their original dataset nor python module anymore, instead we have used a dataset which we are speculating as an extracted chunk of the original. Tailored python module is required to calculate the score according to the competition leaderboard.
