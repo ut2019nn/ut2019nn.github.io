@@ -218,7 +218,6 @@ Also parameter tunning is done.
 
 TODO:
 * predicted vs actual
-* confusion matrix
 * compare to other ML models
 
 As described on the models section, we are choosing the LSTM network because even though it had lower accuracy in the classification sense, it had the lowest validation loss, it was at least 4 times lower than random forrest and even more than the fully connected network.
