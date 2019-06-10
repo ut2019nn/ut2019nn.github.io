@@ -242,7 +242,7 @@ Neural networks should not be the first solution for predictive models. They sho
 Ultimately, we have chosen Keras over PyTorch for heaps of reasonings but more chiefly we speculate that Keras is way matured compared to PyTorch in various number of approaches.
 
 
-### Contributions
+#### Contributions
 
 - Erki Aun - 
 - Hindrek Teder - 
