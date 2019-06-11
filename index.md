@@ -167,7 +167,10 @@ Here we see that the model tries to minimize MSE just simply flattening the pred
 
 Another stage of model estimation is already in the Deep learning environment. We decided to start with Fully connected net.
 After carefully tunning the parameters, we took 4 dense layers one afer another and added dropout layers in between. In the end the activation layer with "tanh" as activation function, the loss is "logcosh" and the optimizer is "Adam".
-The notebook can be observed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr#scrollTo=mTZrr4bmlSMk)
+
+![FF graph](https://drive.google.com/uc?export=view&id=1fCr7B83O6W4YJm393YHyDpuO_LkempcW)
+
+The notebook can be observed [here](https://colab.research.google.com/drive/1dgt8Av_ThIOCrIMfq6QnpvkrAOV2-gHr#scrollTo=mTZrr4bmlSMk).
 
 Here we got around 56% accuracy (balanced accuracy 50%) in the classification sense. Better than random forrest in that sense.
 The minimum validation loss is 0.0037.
@@ -188,7 +191,9 @@ Based on the nature of time series and the task, we need a network that will cap
 
 Now, we made an LSTM layer in the front of the network and followed with 3 dense layers. Again, we added dropout layers in between all connections and activation in the end with "tanh" function. "logcosh" is the loss function and "Adam" is the optimizer.
 
-The network's implementation can be found in [this notebook](https://colab.research.google.com/drive/1WqVP-4bfY7v0rrE1Ag8d7zMSstIYY5eN#scrollTo=XkpaDOwykXlo)
+![LSTM graph](https://drive.google.com/uc?export=view&id=1-1cNntxO3XZ361wE5v0RLxtbezu93vs0)
+
+The network's implementation can be found in [this notebook](https://colab.research.google.com/drive/1WqVP-4bfY7v0rrE1Ag8d7zMSstIYY5eN#scrollTo=XkpaDOwykXlo).
 
 The accuracy of the classification part is around 53% (balanced accuracy 52%). This is not the best result, but in out opinion this network is capable of predicting the size and direction together better than the others.
 We came to this point by looking at the graph of predictions.
