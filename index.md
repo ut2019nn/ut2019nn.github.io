@@ -123,7 +123,7 @@ urgency, relevance, sentimentClass, sentimentNegative, sentimentNeutral, sentime
 close_open_diff - the ratio of close price to open price (close_open_diff = close/open)
 
 * Timeseries data conversion:
-Keras Timeseriesgenerator was being used to generate some sequence of data, in a span of continues 10 days and produce batches for training/validation.
+Keras Timeseriesgenerator was being used to generate some sequence of data, in a span of continuous 10 days and produce batches for training/validation.
 
 ![RNN input](https://cdn-images-1.medium.com/max/1600/1*v5_QpzkQfufVogeCY9eaOw.png)
 
