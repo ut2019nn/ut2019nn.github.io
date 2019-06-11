@@ -162,7 +162,7 @@ Even though our task is regression and we should predict to which direction the 
 
 One good model to start with would be the random forrest regressor. This has proven to give quite good results in almost any task and is not hard to implement and check.
 
-Here estimated 2 depth model where we the data points separately and train the model on each data point. Loss function is taken to be "MSE".
+Here estimated 2 depth model where we took the data points separately and trained the model on each data point. Loss function is taken to be "MSE".
 The implementation of this task and the parameters can be found in [this notebook](https://colab.research.google.com/drive/1fOZa_7uhhSEGQo9AQHkYwdZk7OAaBMGX#scrollTo=Se4ZC7rmAyXN)
 
 Here we have a classification accuracy of 54.4% (balanced accuracy 49%). This is not bad, if we take into account the fact that we are dealing with stock markets and price predictions. At least it behaves better than random. 
