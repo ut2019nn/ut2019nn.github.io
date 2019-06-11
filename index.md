@@ -133,7 +133,6 @@ Data preprocessing notebook can be found [here](https://colab.research.google.co
 
 This is a shared notebook that contains all the transformations we have done so far. We have taken apple stock prices and market news data, merged them together and took the most important features we think will benefit the learning process.
 
-Those features are 'urgency', 'relevance','sentimentClass', 'sentimentNegative', 'sentimentNeutral', 'sentimentPositive','noveltyCount3D', 'noveltyCount5D', 'noveltyCount7D', 'volumeCounts3D', 'volumeCounts5D', 'volumeCounts7D', 'returnsOpenPrevMktres1', 'returnsClosePrevRaw1', 'returnsOpenPrevRaw10', 'returnsOpenPrevMktres10' . And the target is taken to be 'returnsOpenNextMktres10'.
 
 We standardized all the selected features by removing the mean and scaling to unit variance.
 
