@@ -120,7 +120,7 @@ The news data contains information at both the news article level and asset leve
 urgency, relevance, sentimentClass, sentimentNegative, sentimentNeutral, sentimentPositive, noveltyCount3D, noveltyCount5D, noveltyCount7D, volumeCounts3D, volumeCounts5D, volumeCounts7D, returnsOpenPrevMktres1, returnsClosePrevRaw1, returnsOpenPrevRaw10, returnsOpenPrevMktres10
 
 * New features added:
-close_open_diff - Simply the difference between open and close values.
+close_open_diff - the ratio of close price to open price (close_open_diff = close/open)
 
 * Timeseries data conversion:
 Keras Timeseriesgenerator was being used to generate some sequence of data, in a span of continues 10 days and produce batches for training/validation.
@@ -142,7 +142,6 @@ We chose open prices rather than close prices because we think that open prices 
 #### The open price for the day
 ![Times series plot for the open price](https://drive.google.com/uc?export=view&id=1--FjP3doQBKPB5MdWQUNkPcTgZIB8bMX)
 
-We also created a new feature **'close_open_diff'**, which is the ratio of close price to open price (close_open_diff = close/open). 
 
 #### Bootstrap plot on mean, median and mid-range statistics of the close_open_diff feature (samples - 1000, size - 50)
 ![Boostrap plot of close_open_diff feature](https://drive.google.com/uc?export=view&id=1EXOd5DlXTiKblEgu6T6HjzUp146Kk6Pg)
