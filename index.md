@@ -15,7 +15,7 @@ In this project, we predict future stock price returns based on two sources of d
 - News data (2007 to present) provided by Thomson Reuters.
 
 
-#### Market Data
+### Market Data
 
 The data includes a subset of US-listed instruments. The set of included instruments changes daily and is determined based on the amount traded and the availability of information.
 
@@ -51,7 +51,7 @@ Within the marketdata, you will find the following columns:
 #### Target variable 'returnsOpenNextMktres10' with independent variable 'returnsOpenPrevMktres10'
 ![Target variable 'returnsOpenNextMktres10' with 'returnsOpenPrevMktres10'](https://drive.google.com/uc?export=view&id=1-KbbygAwegofZwzdKQXI1FSr9D8GbNMJ)
 
-#### News Data
+### News Data
 
 The news data contains information at both the news article level and asset level.
 
