@@ -127,7 +127,7 @@ Keras Timeseriesgenerator was being used to generate some sequence of data, in a
 
 ![RNN input](https://cdn-images-1.medium.com/max/1600/1*v5_QpzkQfufVogeCY9eaOw.png)
 
-https://cdn-images-1.medium.com/max/1600/1*v5_QpzkQfufVogeCY9eaOw.png
+*(https://cdn-images-1.medium.com/max/1600/1*v5_QpzkQfufVogeCY9eaOw.png)*
 
 Data preprocessing notebook can be found [here](https://colab.research.google.com/drive/10TcWOObFY1SIeUjEnVPw-256NJZhYDGo).
 
