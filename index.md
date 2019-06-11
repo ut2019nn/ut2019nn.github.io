@@ -8,12 +8,15 @@ Collaborators:
 - **Karen Danielyan**: Random Forrest, contribution in accuracy measurement and overall logistics. Part of blog.
 - **Rudayasekaran PS**: Reccurrent, Feed Forward Networks and Data Preprocessing.
 
+---
+
 ### Goal
 
 In this project, we predict future stock price returns based on two sources of data:
 - Market data (2007 to present) provided by Intrinio.
 - News data (2007 to present) provided by Thomson Reuters.
 
+---
 
 ### Market Data
 
@@ -50,6 +53,8 @@ Within the marketdata, you will find the following columns:
 
 #### Target variable 'returnsOpenNextMktres10' with independent variable 'returnsOpenPrevMktres10'
 ![Target variable 'returnsOpenNextMktres10' with 'returnsOpenPrevMktres10'](https://drive.google.com/uc?export=view&id=1-KbbygAwegofZwzdKQXI1FSr9D8GbNMJ)
+
+---
 
 ### News Data
 
@@ -107,6 +112,8 @@ The news data contains information at both the news article level and asset leve
 #### Scatter plot for sentimentPositive, sentimentNegative and sentimentClass
 ![Scatter plot for sentimentPositive, Negative and Class](https://drive.google.com/uc?export=view&id=1-XJOO6RZkZ-wRX8D8H8Td4Tu__ryaaYO)
 
+---
+
 ### Transformation
 
 * Features used:
@@ -146,9 +153,9 @@ We also created a new feature **'close_open_diff'**, which is the ratio of close
 #### Time series plots for all the selected features
 ![Ts plots for the selected features](https://drive.google.com/uc?export=view&id=1-s9pGIQ-tPleU5-yJyzlnIDyVjaoD74d)
 
+---
+
 ### The Models
-
-
 
 Even though our task is regression and we should predict to which direction the stock price will go and by how much, in the evaluation of the models we use the accuracy measure for classification and confusion matrix. This cannot encompass the complete measurment of the model, but will give us some result. Additionally, we will do some particlar analysis to find the best model.
 
@@ -166,7 +173,6 @@ The minimum validation loss is 0.0006
 ![Random Forrest. predicted vs actual](https://drive.google.com/uc?export=view&id=1dvCyjiBVVJWUDg2WhbFRgcvDouBlKlFh)
 
 Here we see that the model tries to minimize MSE just simply flattening the predictions. In a complete random environment this would be the optimal choice, here we see that the model did not get much of an insight of the data, thus predicts some average values, even though the accuracy is more than average, but it does not estimate the size of the stock price movement properly.
-
 
 #### Fully Connected Neural Network
 
@@ -186,9 +192,6 @@ Let's look at the predicted and actual returns.
 
 Now, the network seems to catch some data insight, and the predictions are not as flat as they would be in random forrest case.
 But still, the amplitude of the predictions do not exceed a certain limit, whereas the actual returns are quite volative.
-
-
-
 
 #### LSTM network
 
@@ -215,8 +218,9 @@ We tried different LSTM network with some feed forward part added in front of it
 
 Also parameter tunning is done.
 
-### Results
+---
 
+### Results
 
 As described on the models section, we are choosing the LSTM network because it had  the highest balanced accuracy in the the classification sense (even though it had lowest unbalanced accuracy) and the lowest validation loss. The validation loss was at least 4 times lower than random forrest and even more than the fully connected network.
 
@@ -232,6 +236,8 @@ This means that the size predictions will be better, and even though we get righ
 ![Kaggle Leaderboard](https://drive.google.com/uc?export=view&id=1BIIkIffVFrDAdJu3iF_GqqgJBu8k-Ce3)
 
 Mean score: 0.40454 (2019-06-10 14:51)
+
+---
 
 ### Conclusion
 
